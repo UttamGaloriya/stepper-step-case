@@ -1,0 +1,22 @@
+.mat-mdc-list-item-icon {
+    color: rgba(0, 0, 0, 0.54);
+  }
+.span-icon{
+    background: #30acff;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}     
+.mdc-list-item--with-leading-icon .mdc-list-item__start {
+    color: rgb(255 255 255);
+}
+       
+.menu-list{
+position: absolute;
+top: 10px;
+right: 10px;
+}
+.mdc-list-item.mdc-list-item--with-three-lines{
+    height: 48px !important;
+}

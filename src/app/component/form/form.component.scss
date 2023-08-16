@@ -1,0 +1,65 @@
+.first-page{
+    display: flex;
+    flex-direction: column;
+}
+.example-full-width{
+    width: 100%;
+    // padding: 0px 16px;
+}
+.example-full-width-100{
+    width: 100%;
+}                
+.next-step-button{
+    margin-top: 24px;
+    display: flex;
+    justify-content:space-between;
+
+}
+.cost-fild{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.cost-fild .mat-form-field , .mat-radio-group{
+    width: 45%;
+}
+.add-button{display: flex;flex-direction: column;align-items: stretch;}
+.radio-group  .mat-radio-button{margin-right: 16px;}
+.date-fild .mat-form-field{
+    width: 90%;
+}
+.mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+  
+  .mat-form-field {
+    margin-top: 16px;
+  }
+                
+  .img-preview{
+   width: 300px;
+   padding: 10px;
+
+  }
+  .delete-img{
+    position: absolute;
+    right: 10px;
+    top: 10px;padding: 6px;
+  }
+  .img-div{
+    position: relative;
+  }
+  .img-list{display: flex;flex-wrap: wrap;}
+  .upload-img{
+    background: #2a58ff;
+    padding: 10px;
+    color: #FFF;
+    border-radius: 10px;
+  }
+ .radio-group{display: flex}
+ .step-4{
+    width: 50%;
+ }
+ .file-upload{
+  margin-top: 10px;
+ }

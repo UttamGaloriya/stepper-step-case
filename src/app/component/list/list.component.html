@@ -1,0 +1,23 @@
+<mat-card class="container">
+    <mat-list>
+        <mat-list-item *ngFor="let project of projects ,let i=index">
+            <span matListItemIcon class="span-icon">{{i+1}}</span>
+            <div matListItemTitle>
+                <span>{{project.projectDetails.title}}</span>
+            </div>
+            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="menu-list">
+                <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item [routerLink]="['/edit',project.id]">
+                    <mat-icon>edit</mat-icon>
+                    <span>edit</span>
+                </button>
+            </mat-menu>
+        </mat-list-item>
+    </mat-list>
+    <a mat-raised-button routerLink="/form" color="accent">Open Form</a>
+    <div *ngIf="projects==undefined">
+        <h3>List are empty</h3>
+    </div>
+</mat-card>
